@@ -1,0 +1,45 @@
+---
+title: "My first attempt with Quarto"
+format: html
+editor: visual
+---
+
+## Quarto
+
+# Hello
+
+## Hello
+
+### Hello
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+```{r}
+library(ggplot2)
+
+mydata <- data.frame(x = 1:10, y = 1:10)
+
+ggplot(mydata, aes(x = x, y = y)) +
+  geom_point(colour = "deeppink")
+```
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExazFhM3N3Z2dwdHo4dWRiY2xzbWI2a2hzYTZrYWZxY3F1YmZrc2x1YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mUrBX1TF0kCRi/giphy.gif)
+
+![]()
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
