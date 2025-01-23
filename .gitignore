@@ -1,3 +1,12 @@
+#€ omit certain file types
+*ppt
+*pdf
+*docx
+
+# hide 
+raw-data/*
+hello.R
+
 # History files
 .Rhistory
 .Rapp.history
